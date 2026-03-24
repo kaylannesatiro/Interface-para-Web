@@ -9,7 +9,7 @@ const MeuFormulario = () => {
 
     const onHandleAluno = (evento) => {
         const {value, name} = evento.target
-        setAluno({...aluno, [name]: value}) //espalhando o objeto
+        setAluno (alunoAnterior => ({...alunoAnterior, [name]: value}))//spred: espalhando o objeto
     }
 
     return (
