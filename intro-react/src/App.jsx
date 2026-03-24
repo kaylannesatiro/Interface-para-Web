@@ -2,9 +2,10 @@
 //import StudentProfileList from "./components/StudentProfileList"
 //import StudentProfile from "./components/StudentProfile"
 import "./App.css"
-import PokemonPages from "./components/aula_03/PokemonPages"
+//import PokemonPages from "./components/aula_03/PokemonPages"
 //import TeacherProfile from "./components/atividade-teacher/TeacherProfile"
 //import TeacherProfileList from "./components/atividade-teacher/TeacherProfileList"
+import MeuFormulario from "./components/aula 04/MeuFormulario"
 
 
 /*const App = () => {
@@ -21,7 +22,7 @@ import PokemonPages from "./components/aula_03/PokemonPages"
 const App = () => {
   return (
     <>
-    <PokemonPages/>
+    <MeuFormulario/>
     </>
   )
 }

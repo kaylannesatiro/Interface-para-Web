@@ -3,14 +3,18 @@ import { use, useState } from "react";
 const PokemonPages = () => {
 
     const spriteURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
-    const [id, setId] = useState(100)
+    const [id, setId] = useState(1020)
 
     const addId = () => {
-        setId((x) => x + 1)
+        if (id < 1025) {
+            setId((x) => x + 1) //funçao anonima
+        }
     }
 
     const subId = () => {
-        setId((x) => x - 1)
+        if (id > 1) {
+            setId((x) => x - 1)
+        }
     }
 
     return (
@@ -29,7 +33,7 @@ const PokemonPages = () => {
 
                     <div className="card-body">
                         <h5 className="card-title">
-                            Nome do Pokemon
+                            {id} - Nome do Pokemon
                         </h5>
                         <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et id exercitationem voluptate at dolores dolorum molestiae omnis dolor quae quaerat dicta animi assumenda, dolorem nulla saepe, eligendi ab eveniet ipsum.</p>
 
